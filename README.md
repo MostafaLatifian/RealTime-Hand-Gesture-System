@@ -10,11 +10,11 @@ The main objective was to design a real-time system that maps five distinct hand
 
 | Detected Gesture | Primary Function (Example: Media Control) | Raspberry Pi Function (Physical Output) |
 | :--- | :--- | :--- |
-| **Move Right** (e.g., Thumb Right) | **Video Forward** (Seek Ahead) | **Activates LED 1** |
-| **Move Left** (e.g., Thumb Left) | **Video Backward** (Seek Back) | **Activates LED 2** |
+| **Move Right**| **Video Forward** (Seek Ahead) | **Activates LED 1** |
+| **Move Left**| **Video Backward** (Seek Back) | **Activates LED 2** |
 | **Thumb Up** | **Volume Up** (Increase) | **Activates LED 3** |
 | **Thumb Down** | **Volume Down** (Decrease) | **Activates LED 4** |
-| **Stop Sign** (Open Palm) | **Video Stop/Pause** | **Activates LED 5** |
+| **Stop Sign** | **Video Stop/Pause** | **Activates LED 5** |
 
 ***
 
@@ -51,3 +51,43 @@ The project followed a complete machine learning pipeline:
 ***
 
 ## 📂 Repository Structure
+
+***
+
+## 🚀 Getting Started
+
+### Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/](https://github.com/)[Your-Username]/[Repo-Name].git
+    cd [Repo-Name]
+    ```
+2.  **Install dependencies:**
+    ```bash
+    # Core Libraries for CV and ML
+    pip install mediapipe scikit-learn numpy opencv-python joblib
+    # Install RPi.GPIO separately if running the Pi demo
+    # pip install RPi.GPIO 
+    ```
+
+### Execution
+
+* **To run the main real-time recognition (on PC/Pi):**
+    ```bash
+    python source/main_recognition.py
+    ```
+* **To run the Raspberry Pi LED demo (requires RPi hardware setup):**
+    ```bash
+    python source/pi_gpio_demo.py
+    ```
+
+***
+
+## ✍️ Author & License
+
+| Field | Detail |
+| :--- | :--- |
+| **Author** | [Your GitHub Username / Name] |
+| **Focus** | HMI, Computer Vision, Embedded Systems |
+| **License** | [e.g., MIT License] |
