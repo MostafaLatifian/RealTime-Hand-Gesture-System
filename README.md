@@ -49,45 +49,7 @@ The project followed a complete machine learning pipeline:
 * **Pi Demonstration:** For practical testing, the predicted commands were used to toggle corresponding **LEDs** connected to the Raspberry Pi's **GPIO pins**, simulating physical control.
 
 ***
+### 🔗 Data Source
 
-## 📂 Repository Structure
-
-***
-
-## 🚀 Getting Started
-
-### Installation
-
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/](https://github.com/)[Your-Username]/[Repo-Name].git
-    cd [Repo-Name]
-    ```
-2.  **Install dependencies:**
-    ```bash
-    # Core Libraries for CV and ML
-    pip install mediapipe scikit-learn numpy opencv-python joblib
-    # Install RPi.GPIO separately if running the Pi demo
-    # pip install RPi.GPIO 
-    ```
-
-### Execution
-
-* **To run the main real-time recognition (on PC/Pi):**
-    ```bash
-    python source/main_recognition.py
-    ```
-* **To run the Raspberry Pi LED demo (requires RPi hardware setup):**
-    ```bash
-    python source/pi_gpio_demo.py
-    ```
-
-***
-
-## ✍️ Author & License
-
-| Field | Detail |
-| :--- | :--- |
-| **Author** | [Your GitHub Username / Name] |
-| **Focus** | HMI, Computer Vision, Embedded Systems |
-| **License** | [e.g., MIT License] |
+This project utilized images from the following public dataset for the creation of its custom feature set:
+* **[Hand Gesture Detection System](https://www.kaggle.com/datasets/marusagar/hand-gesture-detection-system)** (Kaggle)
